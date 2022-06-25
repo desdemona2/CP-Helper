@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CP Helper</string>
+    <string name="create_array">Create Random Array</string>
+    <string name="calculate_xor">Calculate XOR</string>
+    <string name="gcd_lcm_calculator">GCD/LCM Calculator</string>
+    <string name="binary_representation">Binary Representation</string>
 </resources>
