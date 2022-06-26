@@ -17,8 +17,11 @@
             <TextView
                 android:id="@+id/arrayView"
                 android:layout_width="match_parent"
-                android:layout_height="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintHeight_min="150dp"
+                app:layout_constraintHeight_max="350dp"
                 android:autoSizeMinTextSize="20sp"
+                android:textIsSelectable="true"
                 android:autoSizeTextType="uniform"
                 android:paddingHorizontal="10dp"
                 android:text="@string/array_display"
