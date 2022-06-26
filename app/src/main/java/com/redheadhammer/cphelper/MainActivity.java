@@ -32,6 +32,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void XorCalculator(View view) {
+        Intent calculator = new Intent(this, XorCalculator.class);
+        this.startActivity(calculator);
     }
 
     public void BinaryRepresentation(View view) {
