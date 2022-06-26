@@ -27,16 +27,30 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
+                android:id="@+id/totalValues"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="20dp"
+                android:importantForAutofill="no"
+                android:layout_marginEnd="10dp"
+                android:hint="@string/size_of_array"
+                android:inputType="numberDecimal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/arrayView" />
+
+            <EditText
                 android:id="@+id/rangeStart"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginVertical="20dp"
                 android:layout_marginEnd="10dp"
+                android:importantForAutofill="no"
                 android:hint="@string/from"
                 android:inputType="numberDecimal"
                 app:layout_constraintEnd_toStartOf="@id/rangeEnd"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/arrayView" />
+                app:layout_constraintTop_toBottomOf="@id/totalValues" />
 
             <EditText
                 android:id="@+id/rangeEnd"
@@ -45,10 +59,11 @@
                 android:layout_marginVertical="20dp"
                 android:layout_marginStart="10dp"
                 android:hint="@string/to"
+                android:importantForAutofill="no"
                 android:inputType="numberDecimal"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/rangeStart"
-                app:layout_constraintTop_toBottomOf="@+id/arrayView" />
+                app:layout_constraintTop_toBottomOf="@+id/totalValues" />
 
             <com.google.android.material.checkbox.MaterialCheckBox
                 android:id="@+id/sorted"
@@ -74,5 +89,16 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="@string/submit"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
