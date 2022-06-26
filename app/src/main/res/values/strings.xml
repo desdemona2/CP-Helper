@@ -13,4 +13,9 @@
     <string name="submit">Submit</string>
     <string name="illegal_values_use_default">Illegal value. Setting default value</string>
     <string name="reversed_array_toast">sorted array will be in decreasing order</string>
+    <string name="enter_value">Integer 1</string>
+    <string name="enter_xor_value">Integer 2</string>
+    <string name="xor">XOR</string>
+    <string name="and">AND</string>
+    <string name="or">OR</string>
 </resources>
